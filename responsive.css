@@ -21,9 +21,6 @@
 
     .project-img:hover{
         background-size: 150%;
-
-        
-    
     }
 }
 
@@ -34,6 +31,10 @@
     .project-img{
         width: 300px;
         height:300px;
+        background-size: 150%;
+    }
+    .project-img:hover{
+        background-size: 150%;
     }
     .project-img-container{
         display: grid;
