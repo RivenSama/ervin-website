@@ -5,21 +5,25 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ervin R. Papp</title>
-<link rel="icon" type="image/x-icon" href="tab-ico.ico">
 
+
+<link rel="icon" type="image/x-icon" href="tab-ico.ico">
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="stylesheet" type="text/css" href="responsive.css" />
+
 
 
 </head>
 
 <body>
+    <script src="script.js"></script>
     <nav id="nav-bar">
         <nav id="normal-nav">
             <div id="nav-items-container">
                 <div id="ico-container"><a href=""><img class="nav-ico" src="tab-ico.ico" alt=""></a></div>
                 <div id="nav-items">    
                     <div id="nav-links">  
+                        
                         <a class="link-nav" href="#About">About</a>
                         <a class="link-nav" href="#Portfolio">Portfolio</a>
                         <a class="link-nav" href="#Contact">Contact</a>
@@ -28,16 +32,18 @@
                 </div>
 
             </div>
-
-
         </nav>
 
         <nav id="hidden-nav">
-            
-            <a class="link-nav" href="">About</a>
-            <a class="link-nav" href="">Portfolio</a>
-            <a class="link-nav" href="">Contact</a>
+            <div id="hidden-ico-container"><a href="" onclick="autoclose()"><img class="hidden-nav-ico" src="tab-ico.ico" alt=""></a></div>
+            <a class="hidden-link-nav" onclick="autoclose()" href="#About">About</a>
+            <a class="hidden-link-nav" onclick="autoclose()" href="#Portfolio">Portfolio</a>
+            <a class="hidden-link-nav" onclick="autoclose()" href="#Contact">Contact</a>
         </nav>
+
+        <div id="hidden-nav-opener">
+            <svg id="open-hidden-nav" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path id="path-open" fill="white" d="M20 5V2H0v3h20zm0 6V8H0v3h20zm0 6v-3H0v3h20z"/></svg>
+        </div>
 
     </nav>
 <section id="landing-page">
@@ -80,7 +86,8 @@
             <input type="text" name="subject" id="subject-inpt" class="form-inpt" placeholder="Subject" required>
             <textarea name="msg" id="msg-inpt" cols="30" rows="10" class="form-inpt" placeholder="Your message" required></textarea>
             <input type="submit" value="send" id="submit-bt" >
-            <input type="hidden" name="_next" value="https://rivensama.github.io/ervin-website/" />
+            <input type="hidden" name="_next" value="#">
+            <input type="text" name="_honey" style="display:none">
             
         </form>
 
