@@ -57,6 +57,8 @@ html{scroll-behavior: smooth;}
 
 #hidden-nav{display: none;}
 
+#hidden-nav-opener{display:none;}
+
 #normal-nav{
     position: fixed;
     background-color: rgba(27, 27, 27, 0.479);
@@ -82,9 +84,9 @@ html{scroll-behavior: smooth;}
     padding: 1%;
 }
 .nav-ico{
-width: 4%;
-height: 4%;
-transition: width 1s, height 1s;
+    width: 4%;
+    height: 4%;
+    transition: width 1s, height 1s;
 }
 
 .nav-ico:hover{
@@ -92,7 +94,7 @@ transition: width 1s, height 1s;
     border-radius: 50%;
     border-color: aliceblue;
     width: 4.5%;
-height: 4.5%;
+    height: 4.5%;
 }
 
 #nav-items{
@@ -253,3 +255,6 @@ a{
 .form-inpt:valid{
     border: none;
 }
+
+
+
