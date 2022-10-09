@@ -280,7 +280,6 @@ html{scroll-behavior: smooth;}
     justify-content: center;
     text-align: center;
 
-    background-image: url(website-blur.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
@@ -289,7 +288,7 @@ html{scroll-behavior: smooth;}
 }
 
 .project-img:hover{
-    background-image: url(website-blur.png);
+    
     background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
@@ -297,11 +296,22 @@ html{scroll-behavior: smooth;}
 
 }
 
+#website-img{
+    background-image: url(website-blur.png);
+}
+#minesweeper-img{
+    background-image: url(minesweeper.png);
+}
+#ik-img{
+    background-image: url(ik.png);
+}
+
+
 
 
 .project-title{
     
-    background-color:rgba(0, 0, 0, 0.412) ;
+    background-color:rgba(0, 0, 0, 0.521) ;
     margin-left: 25%;
     margin-right: 25%;
     border-color: aliceblue;
